@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto de Ciencias El Seba - Matemáticas, Física y Química</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1f2937; /* gray-800 */
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 700;
+            margin-bottom: 1rem; /* 16px */
+            text-align: center;
+            color: #111827; /* gray-900 */
+        }
+        .section-subtitle {
+            font-size: 1.125rem; /* 18px */
+            color: #4b5563; /* gray-600 */
+            margin-bottom: 3rem; /* 48px */
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* 12px */
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.07); /* Sutil shadow */
+            padding: 2rem; /* 32px */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e5e7eb; /* gray-200 */
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.07), 0 4px 6px -4px rgba(0,0,0,0.07); /* Sutil shadow on hover */
+        }
+        .btn-primary {
+            background-color: #2563eb; /* blue-600 */
+            color: white;
+            padding: 0.75rem 1.75rem; /* Ajustado padding */
+            border-radius: 0.5rem; /* 8px */
+            font-weight: 600; /* Semibold */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2), 0 2px 4px -2px rgba(37, 99, 235, 0.1); /* Sombra sutil del color del botón */
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8; /* blue-700 */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px -3px rgba(37, 99, 235, 0.3), 0 4px 6px -4px rgba(37, 99, 235, 0.2);
+        }
+        /* Animación sutil para la imagen */
+        .animated-image {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        /* Custom focus rings to match brand */
+        .form-input:focus {
+            ring-color: #2563eb; /* blue-600 */
+            border-color: #2563eb; /* blue-600 */
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Instituto El Seba</a>
+            <nav class="space-x-6">
+                <a href="#nosotros" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Nosotros</a>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Servicios</a>
+                <a href="#metodologia" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Metodología</a>
+                <a href="#contacto" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gray-50 py-20 md:py-28">
+        <div class="container mx-auto px-6">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 md:text-left mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+                        Desbloquea tu potencial en <span class="text-blue-600">Matemáticas</span>, <span class="text-teal-600">Física</span> y <span class="text-amber-500">Química</span>.
+                    </h1>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Con la guía experta de "El Seba" y su competente staff de profesores, alcanzarás tus metas académicas.
+                    </p>
+                    <a href="#contacto" class="btn-primary text-lg">¡Comienza Hoy!</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <img src="https://raw.githubusercontent.com/leacar21/leaimg/main/Seba.png" alt="El Seba, Director del Instituto" class="rounded-full shadow-xl w-60 h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover border-4 border-white animated-image" onerror="this.onerror=null; this.src='https://placehold.co/320x320/E0E0E0/B0B0B0?text=El+Seba';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Conoce a <span class="text-blue-600">Nuestro Equipo</span></h2>
+            <p class="section-subtitle">
+                En el Instituto El Seba, contamos con la dirección de "El Seba", un apasionado por la enseñanza,
+                y un staff de profesores altamente calificados y dedicados al éxito de cada estudiante.
+            </p>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Nuestra Filosofía</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Creemos que cada estudiante tiene un potencial único. Nuestro enfoque se centra en clases dinámicas,
+                        participativas y adaptadas a las necesidades individuales. Fomentamos un ambiente de confianza
+                        donde preguntar y equivocarse es parte del aprendizaje.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><svg class="w-5 h-5 text-blue-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="font-medium text-gray-800">Grupos Reducidos:</span> Atención personalizada garantizada.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-teal-600 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="font-medium text-gray-800">Profesores Expertos:</span> Apasionados por transmitir conocimiento.</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 text-amber-500 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg><span class="font-medium text-gray-800">Ambiente Inspirador:</span> Para que te sientas motivado a aprender.</li>
+                    </ul>
+                </div>
+                <div class="text-center p-6 bg-gray-50 rounded-lg border border-gray-200">
+                     <svg class="w-48 h-48 mx-auto text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <p class="mt-4 text-gray-600 italic text-sm">"La esencia de la matemática no es hacer las cosas simples complicadas, sino hacer las cosas complicadas simples." - S. Gudder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Nuestros <span class="text-blue-600">Servicios</span></h2>
+            <p class="section-subtitle">
+                Ofrecemos soluciones educativas flexibles y efectivas para ayudarte a superar cualquier desafío académico.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 text-blue-600 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m0 0A7.5 7.5 0 1012 6.253v11.494z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Clases Particulares de Acompañamiento</h3>
+                    </div>
+                    <p class="text-gray-700 mb-5 leading-relaxed">
+                        Refuerza tus conocimientos y aclara dudas a lo largo del curso. Te ayudamos a mantenerte al día
+                        con el programa de liceo o facultad, asegurando una comprensión sólida de cada tema.
+                    </p>
+                    <a href="#contacto" class="font-semibold text-blue-600 hover:text-blue-700 transition duration-300 group">Más Información <span class="group-hover:ml-1 transition-all">&rarr;</span></a>
+                </div>
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                         <svg class="w-10 h-10 text-amber-500 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-800">Preparación para Exámenes y Parciales</h3>
+                    </div>
+                    <p class="text-gray-700 mb-5 leading-relaxed">
+                        ¿Tienes un examen o parcial importante? Te preparamos de forma intensiva y focalizada
+                        en los temas clave, con ejercicios prácticos y simulacros para que llegues con confianza.
+                    </p>
+                    <a href="#contacto" class="font-semibold text-amber-500 hover:text-amber-600 transition duration-300 group">Más Información <span class="group-hover:ml-1 transition-all">&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologia" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Modalidades <span class="text-teal-600">Flexibles</span></h2>
+            <p class="section-subtitle">
+                Adaptamos nuestra enseñanza a tus necesidades y preferencias, ofreciendo opciones presenciales y virtuales.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card text-center">
+                    <svg class="w-14 h-14 text-blue-600 mx-auto mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Clases Presenciales</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Visítanos en nuestro instituto en el corazón de <span class="font-medium">Pocitos, Montevideo</span>.
+                        Disfruta de un ambiente de estudio óptimo y la interacción directa con profesores y compañeros.
+                    </p>
+                </div>
+                <div class="card text-center">
+                    <svg class="w-14 h-14 text-teal-600 mx-auto mb-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Clases Virtuales</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Aprende desde la comodidad de tu hogar con nuestras clases online interactivas.
+                        Utilizamos las mejores herramientas para una experiencia de aprendizaje fluida y efectiva.
+                    </p>
+                </div>
+            </div>
+             <div class="mt-12 text-center bg-blue-50 p-8 rounded-lg border border-blue-200">
+                <p class="text-lg text-blue-800 font-medium">
+                    En ambas modalidades, mantenemos <span class="font-bold">grupos reducidos</span> para asegurar que cada estudiante reciba la atención que merece y necesita para brillar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Ponte en <span class="text-blue-600">Contacto</span></h2>
+            <p class="section-subtitle">
+                ¿Listo para empezar o tienes alguna consulta? ¡Nos encantaría saber de ti!
+                Nuestro horario de atención es de Lunes a Viernes de 10:00 a 20:00 hs.
+            </p>
+            <div class="max-w-3xl mx-auto card p-8 md:p-10">
+                <div class="grid md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-blue-700">Información de Contacto</h3>
+                        <div class="space-y-3 text-gray-700">
+                            <p><strong class="text-gray-800">Dirección:</strong> En el corazón de Pocitos, Montevideo. (Dirección exacta al contactar)</p>
+                            <p><strong class="text-gray-800">Teléfono:</strong> <a href="tel:+598XXXXXXXXX" class="text-blue-600 hover:text-blue-700 hover:underline">+598 XXX XXX XXX</a> (Reemplazar)</p>
+                            <p><strong class="text-gray-800">Email:</strong> <a href="mailto:info@institutoseba.com.uy" class="text-blue-600 hover:text-blue-700 hover:underline">info@institutoseba.com.uy</a> (Reemplazar)</p>
+                            <p><strong class="text-gray-800">Horario:</strong> Lunes a Viernes, 10:00 - 20:00 hs.</p>
+                        </div>
+                         <div class="mt-6">
+                            <div class="w-full h-48 bg-gray-200 rounded-lg flex flex-col items-center justify-center text-gray-500 border border-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.707l-5-5a1 1 0 00-1.414 0l-5 5a1 1 0 001.414 1.414L12 13.414l4.243 4.243a1 1 0 001.414-1.414zM12 3v1m0 16v1m-9-9h1m16 0h1M5.636 5.636l-.707-.707m12.728 12.728l-.707-.707M5.636 18.364l-.707.707m12.728-12.728l-.707.707" />
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 12a3 3 0 100-6 3 3 0 000 6z" />
+                                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-6 8-12a8 8 0 00-16 0c0 6 8 12 8 12z" />
+                                </svg>
+                                <span class="text-sm">Ubicación en Pocitos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-blue-700">Envíanos un Mensaje</h3>
+                        <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo</label>
+                                <input type="text" name="name" id="name" required class="form-input w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                                <input type="email" name="email" id="email" required class="form-input w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
+                                <input type="text" name="subject" id="subject" required class="form-input w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                                <textarea name="message" id="message" rows="4" required class="form-input w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full btn-primary py-3">
+                                    Enviar Mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-200">&copy; 2024 Instituto de Ciencias El Seba. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Diseñado con <span class="text-blue-500">&hearts;</span> para aprender y crecer.</p>
+            <p class="text-sm text-gray-400 mt-1">Pocitos, Montevideo, Uruguay.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add focus classes to form inputs via JS for broader compatibility if needed,
+        // but Tailwind's focus:ring and focus:border should work in modern browsers.
+        // Example:
+        // document.querySelectorAll('.form-input').forEach(input => {
+        //     input.addEventListener('focus', () => input.classList.add('ring-blue-500', 'border-blue-500'));
+        //     input.addEventListener('blur', () => input.classList.remove('ring-blue-500', 'border-blue-500'));
+        // });
+    </script>
+
+</body>
+</html>
